@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+<article>
+<div class="sun"></div>
+<div class="traffic ">
+	<div class="red" id="red"></div>
+	<div class="yellow" id="yellow"></div>
+	<div class="green" id="green"></div>
+	<div class="stol"></div>
+</div>
+</article>	
+<section>
+	<span class="road"></span>
+</section>	
+	
+
+
+
+
+
+
+
+
+
+
+<script>
+ 		let elem=document.getElementById("red");
+		let elem1=document.getElementById("yellow");
+ 		let elem2=document.getElementById("green");
+ 		let count = 0;
+		let date = new Date();
+		alert(  date.getHours() );
+
+
+// setInterval(()=>{
+// },100)
+
+
+// let date = new Date()
+// setInterval(()=>{
+// console.log( date.getHours() );
+// },100)
+
+
+
+if(date>5 || date<=21){
+let interval5 = setInterval(()=>{
+
+ 		let interval = setInterval(()=>{
+ 			console.log(count++);
+ 			elem.style.backgroundColor ='#FF0000';
+ 			elem1.style.backgroundColor ='#C0C0C0';
+			elem2.style.backgroundColor ='#C0C0C0';
+			if (count>=4){
+			clearInterval(interval);
+		}
+ 		}, 1000)
+ 		
+	
+			let interval2 = setInterval(()=>{
+			console.log(count++);
+			elem.style.backgroundColor ='#FF0000';
+			elem1.style.backgroundColor =' #FFFF00';
+			elem2.style.backgroundColor ='#C0C0C0';
+	 		if (count>=3){
+			clearInterval(interval2);
+		}
+ 		},4000)
+
+
+			let interval3 = setInterval(()=>{
+			console.log(count++);
+			elem.style.backgroundColor ='#C0C0C0';
+			elem1.style.backgroundColor =' #FFFF00';
+			elem2.style.backgroundColor ='#C0C0C0';
+	 		if (count>=2){
+			clearInterval(interval3);
+		}
+ 		},5000)
+	
+			let interval4 = setInterval(()=>{
+				console.log(count++);
+ 			elem.style.backgroundColor ='#C0C0C0';
+			elem1.style.backgroundColor ='#C0C0C0';
+			elem2.style.backgroundColor ='#32CD32';
+ 				if (count>=4){
+			clearInterval(interval4);
+		}
+ 		}, 7000)
+
+
+
+	let interval6 = setInterval(()=>{
+			console.log(count++);
+			elem.style.backgroundColor ='#C0C0C0';
+			elem1.style.backgroundColor =' #FFFF00';
+			elem2.style.backgroundColor ='#C0C0C0';
+	 		if (count>=3){
+			clearInterval(interval6);
+		}
+	
+
+ 		},10000)
+
+	},11000)
+}
+
+
+else{
+		let interval9 = setInterval(()=>{
+			let interval7 = setInterval(()=>{
+				console.log(count++);
+			elem.style.backgroundColor ='#C0C0C0';
+			elem1.style.backgroundColor =' #FFFF00';
+			elem2.style.backgroundColor ='#C0C0C0';
+	 		if (count>=3){
+			clearInterval(interval7);
+		}
+ 			},2000)
+
+			let interval8 = setInterval(()=>{
+				console.log(count++);
+			elem.style.backgroundColor ='#C0C0C0';
+			elem1.style.backgroundColor ='#C0C0C0';
+			elem2.style.backgroundColor ='#C0C0C0';
+	 		if (count>=3){
+			clearInterval(interval8);
+		}
+ 			},1000)
+		},3000)
+		
+
+}
+		
+	
+		
+</script>
+</body>
+</html>
